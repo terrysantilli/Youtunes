@@ -1,0 +1,41 @@
+{
+  "name": "youtunes",
+  "version": "1.0.0",
+  "description": "Ethereum blockchain project used for song uploading, purchasing, and auto distribution of funds",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "client-install": "npm install --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/terrysantilli/Youtunes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/terrysantilli/Youtunes/issues"
+  },
+  "homepage": "https://github.com/terrysantilli/Youtunes#readme",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "concurrently": "^4.1.1",
+    "express": "^4.17.1",
+    "fs-extra": "^8.1.0",
+    "ganache-cli": "^6.4.4",
+    "jsonwebtoken": "^8.5.1",
+    "mocha": "^6.1.4",
+    "mongoose": "^5.6.3",
+    "solc": "^0.4.25",
+    "truffle-hdwallet-provider": "0.0.3",
+    "web3": "^1.0.0-beta.55"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
